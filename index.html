@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exploration 1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <style>
+            h1 {
+                color: #000066;
+                margin-top: 130px;
+                margin-left: 0px;
+            }
+            img {
+                margin-top: 15px;
+                margin-bottom: 100px;
+                width: 80%;
+            }
+            .centered { 
+              margin-left: 300px; 
+              position: fixed;
+              min-width:100%;
+            }
+            #box {
+              background-color: #90EE90
+            }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body ng-app="app1">
+    <div ng-controller="appController" class="container">
+    	<div class="row">
+    		<button ng-click="morty()" class="btn-success">Morty</button>
+    		<button ng-click="rick()" class="btn-success">Rick</button>
+    	</div>
+    	<div class="row">
+        <div class="col-md-6">
+          <img ng-src="http://bgnqp4-world.cloudapp.net/exploration1/{{imageURL}}" cass="img-responsive">
+        </div>
+        <div class="col-md-6">
+          <h1>{{content}}</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
